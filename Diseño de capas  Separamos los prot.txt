@@ -1,0 +1,144 @@
+Diseño de capas : Separamos los protocolos utilizados por cap 
+
+Descripcion del servicio DHCP : Explicar configuracion del hcp
+
+SCA : 
+
+SYM : Un pequeño esquema de lo que vamos a simular
+
+CyD : dificultades y mmejoras
+
+TEIP : Tabla
+
+primer parrafo sin importancia. NO hace falta poner los 20 puestos de trabajo despues se explica  
+
+4.1
+Dos servidores de dns primario y secundario.
++2 en delegacion
+Para cada servidor configurar un soa,
+El soa de inca.com.ar del dns primario es igual al soa al segundo 
+
+Todo lo q esta en el dns primario de inca.com.ar es igual  al dns secundario
+
+*Consejo configurar el dns primario y copiarlo. A Este cambiarle el nombre y la ip*
+
+4.2
+Quinto servidor DHCP
+Al segmento q asignamos hay q descontar los ips asignados a los dns 
+
+4.3
+servidores web
+
+1- Buscar imagen cualqueira
+
+2- Inventamos la informaciono general del departamento
+   Un enlace a un listado de las sucursales en la consigna
+
+3-Hacer un login (No tiene que funcionar)
+Solo tiene que aparecer el usuario
+Combotext*
+lo mismo con la contraseña 
+
+4- En este servidor tambien configurar un login nada mas 
+Asignar ips estaticas a las maquinas del departamento administrativo
+
+4 servidores mas
+
+4.4
+Otro servidor hasta ahora 10
+
+4.5
+Crear dos access points
+(Cualquier contraseña )
+
+4.6
+
+4.7
+a-Cada servidor se encarga de lo suyo si es http desactivar todo el resto.
+
+b- a la derecha del router borde poner el sniffer y a la izq de switch
+
+5-Poner en el firewall las ips de las maquinas de administracion como permitidas 
+
+
+-----------------
+
+
+Cada pc debe ir atras de un telefono.
+Hay q poner un telefono ip y una pc
+El telefono va conectado al swtich y la pc al telefono
+Prender el telefono arrastrando el enchufe 
+Todas las pc van al mism otelefono
+
+----------
+Impresoras agregamos una y por defecto se conecta por cable. ( al switch)
+
+Impersora wireless se crea, se apaga, se arrastra la placa de red afuera y arrastro la de la antena. Con eso ya se puede trabajar por wifi 
+
+
+-------------
+
+configuramos DHCP
+
+Se agrega un servidor  conectado a la red
+
+Configuramos ip estatica y mascara 255.255.255.192
+(Idealmente la ultima de las estaticas)
+
+Prendemos el dhcp
+
+cambiamos el numero maximo a un numero posible ej : 30
+
+En puerta de enlace le ponemos la ip q tiene el router del lado derecho
+
+En dns lo mismo ir al router.
+------------
+las ips dinamicas empiezan en la 82 o 83 si le ponemos ip estatica a una impresora. (Aclarar en el informe si l ohicimos o si no especificra que no esta aclarado )
+
+Se pueden asignar 44 ip's
+
+--------------
+
+
+-------------------
+
+
+configuracion inalambrica
+conectamos el acces point al router
+
+entramos en config port 1 y elegimos wpa2-psk
+En ssd cambiar a winca
+Poner una clave 
+
+IR a la impresora entrar en wireless cambiar el ssid al anterior. Activamos wpa2-psk y la misma contraseña 
+
+----
+Borar lo de litium SA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
